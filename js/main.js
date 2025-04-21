@@ -160,7 +160,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // const proxyUrl = "https://cors-anywhere.herokuapp.com/";
     // const apiUrl = "https://ciisa.coningenio.cl/v1/services/";
     $.ajax({
-      url: "http://localhost/eva-1/paginas/servicios.html",
+      url: "http://localhost/eva-1/sitio-conIngenio-php/php/servicios.php",
       type: "GET",
       dataType: "json",
       // headers: headerParams,
@@ -182,9 +182,10 @@ document.addEventListener("DOMContentLoaded", function () {
           $("#servicios-container").append(html);
         }
       },
-      error: function (xhr, stats, error) {
-        console.error("Error al argar los servicios:", error);
-      },
+      error: function (xhr, status, error) {
+        console.error("Error al cargar los datos de servicios:", xhr.status, xhr.responseText, error);
+      }
+      ,
     });
   }
 
@@ -194,7 +195,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // const proxyUrl = "https://cors-anywhere.herokuapp.com/";
     // const apiUrl = "https://ciisa.coningenio.cl/v1/about-us/";
     $.ajax({
-      url: "https://ciisa.coningenio.cl/v1/about-us/",
+      url: "http://localhost/eva-1/sitio-conIngenio-php/php/nosotros.php",
       type: "GET",
       dataType: "json",
       // headers: headerParams,
@@ -217,7 +218,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       },
       error: function (xhr, stats, error) {
-        console.error("Error al argar los servicios:", error);
+        console.error("Error al cargar los datos de nosotros:", xhr.status, xhr.responseText, error);
       },
     });
   }
