@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <title>Coningenio - Contacto</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand nav__logo__negro" href="../index.html"
+          ><img
+            src="../imagenes/con-ingenio-solo-colores.png"
+            alt="Logo de ConIngenio"
+            height="50"
+        /></a>
+        <a class="navbar-brand nav__logo__blanco" href="../index.html">
+          <img
+            src="../imagenes/con-ingenio-solo-blanco.png"
+            alt="Logo de ConIngenio en blanco"
+            height="50"
+          />
+        </a>
+        <button onclick="cambiarTema()" class="btn rounded-fill">
+          <i id="dl-icon" class="bi bi-moon-stars-fill"></i>
+        </button>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../paginas/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../paginas/servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../paginas/contacto.html"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="py-5">
+      <div class="container">
+        <div class="container__contacto">
+          <h2 class="subtitutlo">Contacto</h2>
+          <p class="lead">
+            ¡Nos encantaría saber de usted! Complete el formulario a
+            continuación para contactarnos.
+          </p>
+
+          <div class="row">
+            <div class="col-lg-6 border rounded-2 contacto__form">
+              <form>
+                <div class="mb-3">
+                  <label for="nombre" class="form-label contacto__parrafo"
+                    >Nombre</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nombre"
+                    placeholder="Juanita Perez"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label contacto__parrafo"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="info@coningenio.cl"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="phone" class="form-label contacto__parrafo"
+                    >Telefono</label
+                  >
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="phone"
+                    placeholder="+56998883337"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="mensaje" class="form-label contacto__parrafo"
+                    >Mensaje</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="mensaje"
+                    rows="5"
+                    placeholder="Escribe tu mensaje aquí"
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="btn btn-primary contacto__form_enviar"
+                >
+                  Enviar
+                </button>
+              </form>
+            </div>
+            <div class="col-lg-6 contacto__card__info">
+              <h3>Informacion de contacto</h3>
+              <p class="contacto__parrafo">
+                Av. Providencia 1234, oficina 601 Providencia, Santiago Chile
+              </p>
+              <p class="contacto__parrafo">Teléfono: +56 2 12345678</p>
+              <p class="contacto__parrafo">Email: info@coningenio.com</p>
+              <p class="fw-bold text-center mt-3 contacto__parrafo">
+                Gracias por considerarnos.
+              </p>
+              <p class="fw-bold text-center contacto__parrafo">
+                ¡Esperamos poder ayudarle!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-light py-4">
+      <div class="container text-center">
+        <p>© 2025 Coningenio. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coningenio - Inicio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body data-bs-theme="light">
+    <nav class="navbar navbar-light navbar-expand-lg ">
+      <div class="container">
+        <a class="navbar-brand nav__logo__negro" href="index.html"
+          ><img
+            src="imagenes/con-ingenio-solo-colores.png"
+            alt="Logo de ConIngenio"
+            height="50"
+        /></a>
+        <a class="navbar-brand nav__logo__blanco" href="index.html">
+          <img src="imagenes/con-ingenio-solo-blanco.png" alt="Logo de ConIngenio en blanco" height="50">
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <button onclick="cambiarTema()" class="btn rounded-fill">
+          <i id="dl-icon" class="bi bi-moon-stars-fill"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="paginas/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="paginas/servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="paginas/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid inico__container">
+      <section class="py-5">
+        <div class="container bg-custom">
+          <div class="row">
+            <div class="col-lg-6">
+              <h1>Bienvenido a ConIngenio</h1>
+              <p class="inicio__parrafo">
+                Ofrecemos soluciones de consultoría expertas adaptadas a las
+                necesidades de su negocio. Permítanos ayudarle a alcanzar sus
+                objetivos con nuestro dedicado equipo de profesionales.
+              </p>
+              <a href="paginas/contacto.html" class="btn btn-primary mb-3"
+                >Contáctanos</a
+              >
+            </div>
+            <div class="col-lg-6">
+              <img
+                src="imagenes/bienvenida1.jpeg"
+                alt="Consultoría"
+                class="img-fluid rounded-4"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5">
+        <div class="container__servicios">
+          <h2 class="mb-5 text-center subtitutlo">Servicios</h2>
+          <div class="row home__cards">
+            <div class="col-md-4 mb-4 bg-custom home__cards__col">
+              <h3>Manejo Financiero</h3>
+              <img
+                class="img__card"
+                src="imagenes/manejo-financiero2.jpeg"
+                alt="Hombre trabajando en una laptop"
+              />
+              <p>
+                Asesoramiento financiero experto para ayudarle a tomar
+                decisiones informadas.
+              </p>
+            </div>
+            <div class="col-md-4 mb-4 bg-custom home__cards__col">
+              <h3>Planificación Estratégica</h3>
+              <img
+                class="img__card"
+                src="imagenes/planificacion-estrategica1.jpeg"
+                alt=""
+              />
+              <p>
+                Desarrollo de estrategias integrales para el crecimiento
+                sostenible.
+              </p>
+            </div>
+            <div class="col-md-4 mb-4 bg-custom home__cards__col">
+              <h3>Marketing</h3>
+              <img
+                class="img__card"
+                src="imagenes/marketing1.jpeg"
+                alt="Hombre trabajando en el marketing"
+              />
+              <p>
+                Estrategias de marketing innovadoras para mejorar la visibilidad
+                de su marca.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section__clientes py-5 ">
+        <h2 class="">Que dicen nuestros clientes</h2>
+        <div class="container text-center">
+          <div class="row section__clientes__container">
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body card__body">
+                  <p>
+                    "La experiencia y el profundo conocimiento del equipo de Coningenio marcaron la diferencia en nuestro proyecto. Nos guiaron con seguridad a través de desafíos complejos y nos brindaron soluciones prácticas y efectivas."
+                  </p>
+                  <p class="text-muted">
+                    - Cesar Zegarra, Gerente de negocios at Red Hat
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body card__body">
+                  <p>
+                    "No solo nos dio consejos, sino que transformó nuestra
+                    manera de operar. Su visión estratégica, marketing y su capacidad de implementación fueron clave para que diéramos un salto
+                    cualitativo en nuestro negocio."
+                  </p>
+                  <p class="text-muted">
+                    - Sofía Mendoza, CEO de InnovaTech Solutions
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body card__body">
+                  <p>
+                    "Trabajar con Coningenio fue una experiencia excepcional. Su equipo se integró perfectamente con el nuestro, ofreciendo un apoyo constante y una colaboración genuina. Superamos nuestras expectativa."
+                  </p>
+                  <p class="text-muted">
+                    - Carlos Ruiz, Gerente de Fast Delivery
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="paginas/contacto.html" class="btn btn-primary mt-4 mb-4"
+          >Contactanos</a
+        >
+      </section>
+    </div>
+
+    <footer class="inicio__footer bg-dark text-light ">
+      <h5 class="mt-4">Siguenos</h5>
+      <div class="footer__icon mb-3 d-flex">
+        <i class="bi bi-instagram iconos"></i>
+        <i class="bi bi-twitter-x iconos"></i>
+        <i class="bi bi-linkedin iconos"></i>
+      </div>
+      <div class="container text-center">
+        <p>© 2025 ConIngenio. Todos los derechos reservados.</p>
+      </div>
+      <div class="footer__info text-start gap-3">
+        <ul>
+          <li class="lead">Terminos de uso</li>
+          <li class="lead">Politicas de privacidad y derechos de autor</li>
+          <li class="lead">Canal de denuncias</li>
+          <li class="lead">Acceso Colaboradores</li>
+        </ul>
+        
+      </div>
+      
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
